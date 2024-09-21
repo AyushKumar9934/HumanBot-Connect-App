@@ -33,7 +33,7 @@ console.log(`server is listening at ${PORT}`)
 
 
 const io=new Server(server,{cors:{
-    origin:['http://localhost:5173'],
+    origin:['https://human-bot-connect-app.vercel.app'],
     methods:['GET','POST']
 }})
 
