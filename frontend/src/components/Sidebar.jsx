@@ -18,7 +18,8 @@ const Sidebar = () => {
   const logoutHandler=async()=>{
     try{
       axios.defaults.withCredentials=true;//to write it not not matter as we are not checking for authentication for logout 
-      const res=await axios.get('http://localhost:3000/logout')
+      // const res=await axios.get('http://localhost:3000/logout')
+      const res=await axios.get('https://humanbot-connect-app.onrender.com/logout')
       console.log("res in logout function",res);
       navigate('/login');
       toast.success(res.data.message);

@@ -20,7 +20,8 @@ const Login = () => {
         e.preventDefault();
         try{
     
-            const res=await axios.post(`http://localhost:3000/login`,user,{
+            // const res=await axios.post(`http://localhost:3000/login`,user,{
+              const res=await axios.post(`https://humanbot-connect-app.onrender.com/login`,user,{
                 headers:{
                     "Content-Type":'application/json'
                 },

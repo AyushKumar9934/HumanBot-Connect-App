@@ -18,7 +18,8 @@ const SignUp = () => {
    try{
 
     
-    const res=await axios.post(`http://localhost:3000/register`,user,{
+    // const res=await axios.post(`http://localhost:3000/register`,user,{
+      const res=await axios.post(`https://humanbot-connect-app.onrender.com/register`,user,{
         headers:{
             "Content-Type":'application/json'
         },

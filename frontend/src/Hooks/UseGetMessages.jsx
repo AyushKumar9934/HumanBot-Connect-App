@@ -15,7 +15,8 @@ const UseGetMessages = () => {
             try{
                 console.log("selected userId is ",selectedUser._id);
                 axios.defaults.withCredentials=true;
-                const res=await axios.get(`http://localhost:3000/${selectedUser._id}`)
+                // const res=await axios.get(`http://localhost:3000/${selectedUser._id}`)
+                const res=await axios.get(`https://humanbot-connect-app.onrender.com/${selectedUser._id}`)
                 dispatch(setMessages(res.data))
                 
             }catch(err){

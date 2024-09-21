@@ -17,7 +17,8 @@ const dispatch=useDispatch();
 useEffect(()=>{
   if(authuser){
     console.log("the auther user is",authuser)
-    const tempsocket=io('http://localhost:3000',{
+    // const tempsocket=io('http://localhost:3000',{
+      const tempsocket=io('https://humanbot-connect-app.onrender.com',{
       query:{userId:authuser._id}
 
 
