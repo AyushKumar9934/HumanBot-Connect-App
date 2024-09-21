@@ -21,6 +21,7 @@ const corsOption={
     credentials:true,
 }
 app.use(cors(corsOption))
+
 app.use(userRouter)
 app.use(messageRouter);
 
